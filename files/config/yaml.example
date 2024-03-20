@@ -1,0 +1,36 @@
+server:
+  host: localhost
+  name: scrapper-services
+  version: 1.0
+  mode: development
+mongo_db:
+  product_1: test1
+  product_2: test2
+
+redis:
+  host: redisHost
+
+grpc:
+  host: grpcHost
+
+scrap:
+  urls:
+    - name: tokopedia
+      domain: https://www.tokopedia.com
+      param: search?&q=
+    - name: blibli
+      domain: https://www.blibli.com/cari
+      param:
+    - name: shopee
+      domain: https://www.shopee.co.id
+      param: search?keyword=
+    - name: lazada
+      domain: https://www.lazada.co.id
+      param: catalog/?q=
+  user_agents:
+    - name: mac
+      value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.8
+    - name: windows
+      value: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    - name: linux
+      value: Mozilla/5.0 (Linux; Android 4.3; GT-I9300 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36

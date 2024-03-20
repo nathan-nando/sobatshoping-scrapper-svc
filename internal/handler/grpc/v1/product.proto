@@ -1,0 +1,34 @@
+syntax = "proto3";
+option go_package = "grpc-scrapper/grpc/v1/product";
+
+
+service Product{
+//  rpc DealsOfTheDay(DealsOfTheDayRequest) returns(DealsOfTheDayResponse);
+//  rpc HuntingHarga(HuntingHargaRequest) returns (HuntingHargaResponse);
+  rpc Create(CreateRequest) returns(CreateResponse);
+}
+
+message CreateRequest{
+  int64 id = 1;
+  string name = 2;
+}
+
+message CreateResponse{
+  bytes result=1;
+}
+
+//message DealsOfTheDayRequest{
+//
+//}
+//
+//message DealsOfTheDayResponse{
+//
+//}
+//
+//message HuntingHargaRequest{
+//
+//}
+//
+//message HuntingHargaResponse{
+//
+//}
