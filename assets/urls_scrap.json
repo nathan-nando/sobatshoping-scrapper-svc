@@ -1,0 +1,22 @@
+[
+  {
+    "name": "tokopedia",
+    "domain": "https://www.tokopedia.com",
+    "param": "search?&q="
+  },
+  {
+    "name": "shopee",
+    "domain": "https://www.shopee.co.id",
+    "param": "search?keyword="
+  },
+  {
+    "name": "blibli",
+    "domain": "https://www.blibli.com/cari",
+    "param": ""
+  },
+  {
+    "name": "lazada",
+    "domain": "https://www.lazada.co.id",
+    "param": "catalog/?q="
+  }
+]

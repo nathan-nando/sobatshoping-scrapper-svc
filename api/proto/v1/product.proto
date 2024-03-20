@@ -1,0 +1,34 @@
+syntax = "proto3";
+option go_package = "github.com/nathan-nando/sobatshoping-scrapper-svc/api/proto/v1/product";
+
+
+service Product{
+//  rpc DealsOfTheDay(DealsOfTheDayRequest) returns(DealsOfTheDayResponse);
+//  rpc HuntingHarga(HuntingHargaRequest) returns (HuntingHargaResponse);
+  rpc Create(CreateRequest) returns(CreateResponse);
+}
+
+message CreateRequest{
+  int64 id = 1;
+  string name = 2;
+}
+
+message CreateResponse{
+  bytes pdf=1;
+}
+
+//message DealsOfTheDayRequest{
+//
+//}
+//
+//message DealsOfTheDayResponse{
+//
+//}
+//
+//message HuntingHargaRequest{
+//
+//}
+//
+//message HuntingHargaResponse{
+//
+//}
