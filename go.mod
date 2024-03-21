@@ -3,6 +3,7 @@ module github.com/nathan-nando/sobatshoping-scrapper-svc
 go 1.21.1
 
 require (
+	github.com/robfig/cron/v3 v3.0.1
 	github.com/sirupsen/logrus v1.9.3
 	google.golang.org/grpc v1.59.0
 	google.golang.org/protobuf v1.31.0
